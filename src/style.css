@@ -21,7 +21,7 @@ h1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: 20%
+  margin-left: 20%;
 }
 
 .recentScoreTitle {
