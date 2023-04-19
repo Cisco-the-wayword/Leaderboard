@@ -13,10 +13,7 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -26,7 +23,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Weboack <a name="about-project"></a>
+# 📖 Leaderboard <a name="about-project"></a>
 
 **Leaderboard** list app is a project to act as a score board for a computer game.
 
@@ -83,16 +80,6 @@ Example commands:
  $ git@github.com:Cisco-the-wayword/Leaderboard.git
 ```
 
-### Install
-
-Install git to work on this project with:
-
-```sh
-   $ git config --global user.name "First Last"
-
-   $ git config --global user.email "example@example.com"
-```
-
 ### Usage
 
 To run the project have Node.js installed, execute the following command in your terminal:
@@ -101,26 +88,6 @@ To run the project have Node.js installed, execute the following command in your
   $ npm start
 ```
 
-
-### Run tests
-
-To run tests, run the HTML document in Google Chrome and right-click the HTML element you want to inspect. Click on "Inspect" and you will have the tools to run, analyze, and even debug the code
-
-### Deployment
-
-You can deploy this project using build tools such as webpack, Rollup, Parcel, e.t.c or even deploy using Github pages:
-
-Example: To build for production with parcel, use the folowing commands:
-
-- Initialise npm package
-- Install parcel
-- Build for production
-
-```sh
- $ npm init -y
- $ npm i -g parcel-bundler
- $ parcel build index.html
-```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
