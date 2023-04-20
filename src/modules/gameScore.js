@@ -1,9 +1,9 @@
 class GameScore {
   constructor(user, score) {
-  this.user = user;
-  this.score = score;
-}
-  
+    this.user = user;
+    this.score = score;
+  }
+
 //  stores data in array
 scoresData = [];
 
@@ -40,7 +40,7 @@ addNewScore = async ({ user, score }) => {
       },
       body: JSON.stringify({ user, score }),
     };
-       const data = await fetch(this.apiURL, config);
+    const data = await fetch(this.apiURL, config);
     const response = await data.json();
     this.scoresData.push(response);
     this.sortScores(this.scoresData, 'numerical');
