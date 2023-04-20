@@ -14,10 +14,7 @@ addScore.addEventListener('submit', (e) => {
 
 const refreshBtn = document.getElementById('refresh');
 refreshBtn.addEventListener('click', currentScore.fetchScores);
-document.addEventListener('DOMContentLoaded', currentScore.fetchScores);
-
-const sortAlphaBtn = document.getElementById('sort-alpha');
-sortAlphaBtn.addEventListener('click', () => currentScore.saveSortMethod('alphabetical'));
-
-const sortNumBtn = document.getElementById('sort-num');
-sortNumBtn.addEventListener('click', () => currentScore.saveSortMethod('numerical'));
+document.addEventListener('DOMContentLoaded', () => {
+  currentScore.fetchScores();
+  currentScore.showScores();
+});
