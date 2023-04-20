@@ -8,7 +8,7 @@ class GameScore {
   scoresData = [];
 
   // API URL
-  apiURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/gjFgjGDcJhDxNGDNGcvn/scores/';
+  apiURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/gjFgjGDcJhDxNfDNGcvn/scores/';
 
   // Show Scores
   showScores = () => {
