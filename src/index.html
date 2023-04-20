@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="background"></div>
     <h1>Leaderboard</h1>
     <div class="container">
         <div class="recentScores">
@@ -15,7 +17,9 @@
             </div>
             <div class="recentScoreList">
                 <ul id="list">
-                 </ul>
+                </ul>
+                <button id="sort-alpha">Sort Alphabetically</button>
+                <button id="sort-num">Sort Numerically</button>                
             </div>
         </div>
         <div class="addScore">
@@ -23,9 +27,10 @@
                 <h2 id="addScore">Add your score</h2>
                 <input class="input name" type="text" name="name" placeholder="Your name" required>
                 <input class="input score" type="text" name="score" placeholder="Your score" required>
-                <input id="submit" type="submit" value="Submit">                
+                <button id="submit" type="submit">Submit</button>                
             </form>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

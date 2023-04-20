@@ -4,7 +4,7 @@ class GameScore {
     this.score = score;
   }
 
-  //  stores data in array
+  // stores data in array
   scoresData = [];
 
   // API URL
@@ -13,7 +13,7 @@ class GameScore {
   // Show Scores
   showScores = () => {
     const scoresList = document.getElementById('list');
-    scoresList.innerHTML = this.scoresData.map((item) => `
+    scoresList.innerHTML = this.sortScores(this.scoresData).map((item) => `
     <li>${item.user} : ${item.score}</li>`).join('');
   };
 
@@ -25,7 +25,9 @@ class GameScore {
       this.scoresData = [];
       response.result.map((item) => this.scoresData.push(item));
       return this.showScores();
-    } catch (error) { return error; }
+    } catch (error) {
+      return error;
+    }
   };
 
   // Add a new Score
@@ -44,7 +46,27 @@ class GameScore {
       const response = await data.json();
       this.scoresData.push(response);
       return this.fetchScores();
-    } catch (error) { return error; }
+    } catch (error) {
+      return error;
+    }
+  };
+
+  // Sort Scores
+  sortScores = (scores) => {
+    const sortMethod = localStorage.getItem('sortMethod');
+    if (sortMethod === 'alphabetical') {
+      return scores.sort((a, b) => a.user.localeCompare(b.user));
+    } else if (sortMethod === 'numerical') {
+      return scores.sort((a, b) => b.score - a.score);
+    } else {
+      return scores;
+    }
+  };
+
+  // Save sort method to local storage
+  saveSortMethod = (sortMethod) => {
+    localStorage.setItem('sortMethod', sortMethod);
+    this.showScores();
   };
 }
 
