@@ -60,7 +60,7 @@ class GameScore {
       return scores.sort((a, b) => b.score - a.score);
     }
     return scores;
-  };
+  };  
 
   // Save sort method to local storage
   saveSortMethod = (sortMethod) => {
