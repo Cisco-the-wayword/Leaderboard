@@ -13,6 +13,7 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Install](#install)
   - [Usage](#usage)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -78,6 +79,16 @@ Example commands:
 ```sh
  $ cd my-folder
  $ git@github.com:Cisco-the-wayword/Leaderboard.git
+```
+
+### Install
+
+Install git to work on this project with:
+
+```sh
+   $ git config --global user.name "First Last"
+
+   $ git config --global user.email "example@example.com"
 ```
 
 ### Usage
