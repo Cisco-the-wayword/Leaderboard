@@ -58,9 +58,8 @@ class GameScore {
       return scores.sort((a, b) => a.user.localeCompare(b.user));
     } else if (sortMethod === 'numerical') {
       return scores.sort((a, b) => b.score - a.score);
-    } else {
-      return scores;
     }
+      return scores;
   };
 
   // Save sort method to local storage
