@@ -4,16 +4,16 @@ class GameScore {
     this.score = score;
   }
 
-  //  stores data in array
+  // stores data in array
   scoresData = [];
 
   // API URL
-  apiURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games//scores/';
+  apiURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/gjFgjGDcJhDxNfDNGcvn/scores/';
 
   // Show Scores
   showScores = () => {
     const scoresList = document.getElementById('list');
-    scoresList.innerHTML = this.scoresData.map((item) => `
+    scoresList.innerHTML = this.sortScores(this.scoresData).map((item) => `
     <li>${item.user} : ${item.score}</li>`).join('');
   };
 
@@ -25,7 +25,9 @@ class GameScore {
       this.scoresData = [];
       response.result.map((item) => this.scoresData.push(item));
       return this.showScores();
-    } catch (error) { return error; }
+    } catch (error) {
+      return error;
+    }
   };
 
   // Add a new Score
