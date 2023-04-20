@@ -26,7 +26,6 @@ h1 {
 
 .recentScoreTitle {
   display: flex;
-  align-items: center;
 }
 
 #refresh {
@@ -50,11 +49,11 @@ div ul li {
   margin: 0 10px;
 }
 
-.bgGrey {
-  background-color: rgb(225, 225, 225);
+div ul li:nth-child(even) {
+  background-color: rgb(198, 198, 198);
 }
 
-.addContainer {
+.add-form {
   display: flex;
   flex-direction: column;
   gap: 1em;
