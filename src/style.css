@@ -119,3 +119,48 @@ div ul li:nth-child(even) {
   transform: translateY(-2px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+/* For mobile devices */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+    margin: 1rem 0 2rem 1rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .add-form {
+    padding: 1rem;
+  }
+
+  .input {
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  #submit {
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* For tablets and larger devices */
+@media (min-width: 577px) {
+  h1 {
+    font-size: 3rem;
+    margin: 1rem 0 3rem 1rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+  }
+
+  .add-form {
+    padding: 2rem;
+  }
+}
+
